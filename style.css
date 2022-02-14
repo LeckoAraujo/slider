@@ -3,3 +3,30 @@
     margin: 0;
     padding: 0;
 }
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header{
+    height: 50px;
+    background-color: #555;
+}
+.slider{
+    flex: 1;
+    background-color: #AAA;
+    overflow: hidden;
+}
+.slider--width{
+    height: 100%;
+    width: calc(100vw * 3);
+    display: flex;
+    transition: all ease 0.3s;
+}
+.slider--item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
